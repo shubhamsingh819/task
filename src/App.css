@@ -1,38 +1,106 @@
-.App {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
   text-align: center;
+  color: #4a4a8c;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  background-color: #4a4a8c;
   color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #3b3b72;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+select,
+input [type="text"] {
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 200px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #4a4a8c;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+th:hover {
+  background-color: #3b3b72;
+}
+
+tr:nth-child(evev) {
+  background-color: #f9f9f9;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+.filter-container select,
+.search-container input {
+  margin-left: 10px;
+}
+
+.searchBox {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  outline: 1px solid grey;
+  text-align: left;
+  border: none;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right div {
+  margin: 0 20px;
+}
+button {
+  margin-top: 18px;
 }
