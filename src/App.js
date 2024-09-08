@@ -62,8 +62,7 @@ function App() {
     }
   };
 
-
-//  sorting the filterdedUsers based on the column clicked (name or address.zipcode) (asc , dsc)
+  //  sorting the filterdedUsers based on the column clicked (name or address.zipcode) (asc , dsc)
   const handleSort = (column) => {
     let sortedUsers = [...filteredUsers];
     if (sortOrder === "asc") {
@@ -79,7 +78,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div>
       <h1>Users List Application</h1>
       {loading && <h1>loading...</h1>}
       <div className="heading">
